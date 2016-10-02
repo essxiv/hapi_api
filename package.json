@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/github.com/essxiv/issues"
   },
-  "homepage": "https://github.com/github.com/essxiv#readme"
+  "homepage": "https://github.com/github.com/essxiv#readme",
+  "dependencies": {
+    "convict": "^1.5.0",
+    "good-console": "^6.1.2",
+    "hapi": "^15.1.1",
+    "hapi-swagger": "^7.2.0",
+    "joi": "^9.1.0",
+    "mongoose": "^4.6.2"
+  }
 }
