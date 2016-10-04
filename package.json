@@ -4,6 +4,7 @@
   "description": "basic restful api using hapi",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,5 +27,13 @@
     "hapi-swagger": "^7.2.0",
     "joi": "^9.1.0",
     "mongoose": "^4.6.2"
+  },
+  "devDependencies": {
+    "blipp": "^2.3.0",
+    "code": "^4.0.0",
+    "lab": "^11.0.1",
+    "standard": "^8.1.0",
+    "inert": "^4.0.2",
+    "vision": "^4.1.0"
   }
 }

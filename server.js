@@ -18,8 +18,10 @@ module.exports = function (config) {
   }
 
   server.register([
-    swagger
-  ], function (err) {
+    require('inert'),
+    require('blipp'),
+    require('vision'),
+    swagger], function (err) {
     if (err) {
       console.log(err)
     }
