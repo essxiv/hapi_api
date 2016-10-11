@@ -26,6 +26,7 @@
     "hapi": "^15.1.1",
     "hapi-swagger": "^7.2.0",
     "joi": "^9.1.0",
+    "knex": "^0.12.3",
     "mongoose": "^4.6.2"
   },
   "devDependencies": {
