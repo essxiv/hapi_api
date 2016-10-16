@@ -1,5 +1,7 @@
 const Hapi = require('hapi')
 const server = new Hapi.Server()
+const routes = require('./lib/routes/index')
+const userModel = require('./lib/core/index')
 
 module.exports = function (config) {
   server.connection({
@@ -25,6 +27,9 @@ module.exports = function (config) {
     if (err) {
       console.log(err)
     }
+    server.route([
+      routes.user.getUser
+    ])
   })
   return server
 }
