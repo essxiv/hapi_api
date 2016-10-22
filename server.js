@@ -1,9 +1,9 @@
 const Hapi = require('hapi')
 const server = new Hapi.Server()
+const mongoose = require('mongoose')
 const routes = require('./lib/routes/index')
 const database = require('./lib/store/index')
 const userModel = require('./lib/core/index')
-const mongoose = require('mongoose')
 
 module.exports = function (config) {
   mongoose.connect(database.database.url)
@@ -11,7 +11,7 @@ module.exports = function (config) {
     host: config.host,
     port: config.port
   })
-  
+
   const swagger = {
     register: require('hapi-swagger'),
     options: {
